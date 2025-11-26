@@ -2,7 +2,7 @@ DevOps FAT-2 Assignment
 
 1. Five DevOps Concepts
 
-1. Continuous Integration (CI)
+### **1. Continuous Integration (CI)**
 
 Continuous Integration is a practice where developers frequently merge their code changes into a shared repository. Each merge triggers an automated build and test process, ensuring errors are detected early, reducing integration issues, and maintaining a stable codebase.
 
