@@ -1,62 +1,59 @@
+DevOps FAT-2 Assignment
+
 1. Five DevOps Concepts
+
 1. Continuous Integration (CI)
 
-Continuous Integration is the practice where developers frequently merge their code changes into a shared repository. Each change triggers automated builds and tests, helping detect errors early, avoiding integration conflicts, and ensuring the codebase always remains in a deployable state.
+Continuous Integration is the practice where developers frequently merge their code changes into a shared repository. Each change triggers automated builds and tests, helping detect errors early, reducing integration conflicts, and ensuring the codebase remains in a deployable state.
 
-2. Continuous Delivery & Deployment (CD)
+2. Continuous Delivery and Deployment (CD)
 
-Continuous Delivery ensures that the software is always ready to be deployed to production. Continuous Deployment extends this by automatically deploying every successful code change. Together, they enable faster, more reliable, and automated releases.
+Continuous Delivery ensures that software is always in a deployable state through automated testing and packaging. Continuous Deployment further automates the process by deploying every successful change to production without manual approval. Together, these practices reduce human error and accelerate release cycles.
 
 3. Infrastructure as Code (IaC)
 
-Infrastructure as Code manages infrastructure using code instead of manual configuration. Tools like Terraform, Ansible, and CloudFormation help ensure consistent environments, reduced configuration drift, and repeatable deployments.
+Infrastructure as Code involves managing and provisioning infrastructure using machine-readable configuration files instead of manual processes. Tools like Terraform, Ansible, and CloudFormation help maintain consistency across environments, reduce configuration drift, and automate deployments.
 
 4. Version Control (Git)
 
-Git tracks changes in code and allows multiple developers to collaborate without conflict. It provides version history, rollback capability, branching, merging, and acts as the backbone of CI/CD pipelines and modern DevOps workflows.
+Git is a distributed version control system that helps track changes in code. It allows multiple developers to collaborate effectively, maintain history, revert to previous versions, and manage features through branching and merging. Git forms the foundation of modern CI/CD and DevOps practices.
 
 5. Containerization (Docker)
 
-Containerization packages applications with all dependencies into isolated containers. Docker ensures consistent execution in all environments—development, testing, and production—solving the “works on my machine” problem and enabling scalable, fast deployments.
+Containerization packages an application and its dependencies in isolated environments called containers. Docker ensures the application runs the same across different environments, preventing compatibility issues and enabling efficient scaling, testing, and deployment.
 
 2. How I Completed This Assignment
 
-To complete this DevOps FAT-2 assignment, I followed a series of practical steps involving Docker, Linux commands, Git, and GitHub.
+To complete this DevOps FAT-2 assignment, I followed a structured approach:
 
-Created a project folder on my system and opened it in VS Code.
+Created a project folder on my system and opened it in a code editor.
 
-Created a Dockerfile containing basic Linux commands like updating packages, installing utilities, creating a directory, and writing a message into a text file.
+Created a Dockerfile that contains basic Linux operations such as updating packages, installing utilities, creating a directory, and writing a message into a file.
 
-Built the Docker image using the docker build command.
+Built the Docker image using the Docker CLI and verified its successful creation.
 
-Ran the Docker container to verify that the directory and file operations were performed correctly inside the container.
+Ran the Docker container to ensure that the directory, file creation, and output display commands executed correctly.
 
-Logged into DockerHub from the terminal using secure authentication.
+Logged in to DockerHub from the terminal and tagged the local image with my DockerHub username.
 
-Tagged and pushed the image to my public DockerHub repository.
+Pushed the tagged image to my public DockerHub repository.
 
-Initialized a Git repository, added all files, and committed them.
+Initialized Git in my project folder, staged all files, and committed them.
 
-Created a public GitHub repository and pushed all project files, including the Dockerfile and README.md.
+Created a new public GitHub repository and pushed all assignment files (Dockerfile and README.md).
 
-Wrote this README to explain:
+Documented the entire process, concepts, commands used, and learnings in this README file.
 
-The DevOps concepts
+Below are the exact Docker and Git commands used during the assignment.
 
-Steps followed
-
-Docker + Git commands used
-
-The learning outcomes
-
-Exact Docker Commands Used
+Docker Commands Used
 docker build -t vibha-fat2 .
 docker run vibha-fat2
 docker login
 docker tag vibha-fat2 vibhapateshwari1/fat2:v1
 docker push vibhapateshwari1/fat2:v1
 
-Exact Git Commands Used
+Git Commands Used
 git init
 git add .
 git commit -m "DevOps FAT2 assignment"
@@ -64,22 +61,27 @@ git branch -M main
 git remote add origin https://github.com/VibhaCodes/devops-fat2.git
 git push -u origin main
 
-3. How This Assignment Helped Me Learn DevOps, Linux, Git, and Docker
+3. How This Assignment Helped Me
+   Learning DevOps
 
-DevOps
+The assignment helped me understand how multiple DevOps tools (Git, Docker, Linux commands) work together in the development and deployment process. It provided a practical view of automation and workflow management.
 
-I understood how Docker, Git, version control, and automation tools form part of the DevOps workflow.
+Learning Linux
 
-Linux
+I practiced essential Linux commands such as directory creation, file manipulation, package installation, and output display inside a Docker environment.
 
-I practiced fundamental Linux operations like mkdir, echo, ls, and package installation inside a Docker environment.
+Learning Git
 
-Git
+I learned how to initialize a repository, stage and commit changes, create a remote connection, and push code to GitHub. This improved my understanding of version control.
 
-I learned how to initialize a repository, commit changes, create a remote connection, and push code to GitHub.
+Learning Docker
 
-Docker
+I gained hands-on experience in writing Dockerfiles, building images, running containers, tagging images, and pushing them to DockerHub. This strengthened my understanding of containerization.
 
-I gained hands-on experience with writing Dockerfiles, building images, running containers, tagging images, and pushing to DockerHub.
+Repository and Image Links
 
-This assignment improved my confidence in using DevOps tools and understanding how they fit together in real-world development and deployment pipelines.
+GitHub Repository:
+https://github.com/VibhaCodes/devops-fat2
+
+DockerHub Image:
+https://hub.docker.com/r/vibhapateshwari1/fat2
